@@ -25,15 +25,13 @@ export default {
     computed:{
         price() {
             const now = moment()
-            const startDate = moment("4-1-2018", "MM-DD-YYYY")
-            const stopDate = moment("4-10-2018", "MM-DD-YYYY")
-            
-            const diffInDays = now.diff(startDate, 'days')
+            const startDate = moment("5-1-2018", "MM-DD-YYYY")
+            const stopDate = moment("5-21-2018", "MM-DD-YYYY")
 
             let price = 120000
 
-            if (diffInDays > 0 && stopDate.diff(now) > 0) {
-                price = price + 2000 * diffInDays
+            if (now.isBetween(startDate, stopDate)) {
+                price = price + 2000 * now.diff(startDate, 'days')
             }
             return price
         }
