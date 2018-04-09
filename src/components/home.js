@@ -1,6 +1,7 @@
 import Payment from '@/components/base/Payment.vue'
 import Ytplayer from '@/components/base/Ytplayer.vue'
 import Grform from '@/components/base/Grform.vue'
+import moment from 'moment'
 
 export default {
     name: 'Home',
@@ -35,6 +36,11 @@ export default {
         }
     },
     mounted() {
-        //
+        // const now = moment()
+        const now = moment("23-5-2-2018", "HH-MM-DD-YYYY")
+        const startDate = moment("23-5-1-2018", "HH-MM-DD-YYYY")
+
+        console.log(now.toString(), startDate.toString())
+        console.log(now.diff(startDate, 'days', true))
     }
 }
