@@ -12,20 +12,7 @@ export default {
     },
     data() {
         return {
-            // words: [
-            //     ['Компания малоуправляема', 1000],
-            //     ['Нечетко определены области ответственности', 500],
-            //     ['Много совещаний, низкая результативность', 250],
-            //     ['Решения не доводятся до результатов', 125],
-            //     ['Планы не выполняются', 60],
-            //     ['Рабочие процессы плохо организованы', 30],
-            //     ['Сотрудники не мотивированы работать на результат', 15],
-            //     ['Исполнители безответственны', 7],
-            //     ['Ухудшается качество продукции, услуг', 3],
-            //     ['Утрачивается лояльность клиентов', 2],
-            //     ['Снижается прибыль', 1],
-            //     ['Развитие компании замедлено', 1],
-            // ],
+            //
         }
     },
     methods: {
@@ -35,12 +22,23 @@ export default {
             window.scrollTo(0, top);
         }
     },
-    mounted() {
-        // const now = moment()
-        const now = moment("23-5-2-2018", "HH-MM-DD-YYYY")
-        const startDate = moment("23-5-1-2018", "HH-MM-DD-YYYY")
+    computed:{
+        price() {
+            const now = moment()
+            const startDate = moment("4-1-2018", "MM-DD-YYYY")
+            const stopDate = moment("4-10-2018", "MM-DD-YYYY")
+            
+            const diffInDays = now.diff(startDate, 'days')
 
-        console.log(now.toString(), startDate.toString())
-        console.log(now.diff(startDate, 'days', true))
+            let price = 120000
+
+            if (diffInDays > 0 && stopDate.diff(now) > 0) {
+                price = price + 2000 * diffInDays
+            }
+            return price
+        }
+    },
+    mounted() {
+        //
     }
 }

@@ -14,7 +14,7 @@
         <a href="#" class="btn btn-danger btn-lg text-uppercase" @click.prevent="scrollMeTo('join-block')">Участвовать</a>
       </div>
     </div>
-
+{{ price }}
     <div class="container">
       <div class="row text-center">
         <div class="col" style="margin-top:30px">
