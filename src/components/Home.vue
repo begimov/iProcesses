@@ -9,12 +9,12 @@
         <h1 class="display-3 d-none d-sm-block text-uppercase"><strong>Создание системы управления процессами</strong></h1>
         <h1 class="display-5 d-sm-none text-uppercase">Создание системы управления процессами</h1>
         <p class="lead header-date">14 мастер-классов + 50 шаблонов + консультации!</p>
-        <p class="lead"><strong class="text-warning">По&nbsp;просьбам участников перенесено на&nbsp;неделю.</strong></p>
-        <p class="lead"><span class="badge badge-light">Старт 5&nbsp;апреля!</span></p>
+        <!-- <p class="lead"><strong class="text-warning">По&nbsp;просьбам участников перенесено на&nbsp;неделю.</strong></p> -->
+        <p class="lead"><span class="badge badge-light">Старт 21&nbsp;мая!</span></p>
         <a href="#" class="btn btn-danger btn-lg text-uppercase" @click.prevent="scrollMeTo('join-block')">Участвовать</a>
       </div>
     </div>
-{{ price }}
+
     <div class="container">
       <div class="row text-center">
         <div class="col" style="margin-top:30px">
@@ -607,6 +607,7 @@
       <div class="row text-center" ref="join-block">
         <div class="col" style="margin-top:30px">
           <h2>Я участвую!</h2>
+          <p class="lead bg-success text-white p-2 font-weight-bold">Льготные цены в случае оплаты до 30 апреля.</p>
         </div>
       </div>
       <div class="row last-row text-center">
@@ -619,14 +620,14 @@
               <span class="lead"><strong>&nbsp;</strong></span>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Участие в мастер-классах.</li>
-              <li class="list-group-item">Записи мастер-классов.</li>
+              <li class="list-group-item">Участие в мастер-классах</li>
+              <li class="list-group-item">Записи мастер-классов</li>
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">12&thinsp;000&nbsp;&#8381;</span></h2>
+              <h2><span class="badge badge-primary">11900</span></h2>
               <Payment
-                WMI_PAYMENT_AMOUNT="12000"
+                WMI_PAYMENT_AMOUNT="11900"
                 WMI_DESCRIPTION="iTeam"
                 WMI_SUCCESS_URL="https://iteam.ru/promo/processes"
                 WMI_FAIL_URL="https://iteam.ru/promo/processes"
@@ -645,14 +646,14 @@
               <span class="lead"><strong>+</strong></span>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Презентационные материалы.</li>
-              <li class="list-group-item">Методические материалы, шаблоны, образцы документов.</li>
+              <li class="list-group-item">Презентационные материалы</li>
+              <li class="list-group-item">Методические материалы, шаблоны, образцы документов</li>
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">40&thinsp;000&nbsp;&#8381;</span></h2>
+              <h2><span class="badge badge-primary">{{ price(29000, 500) }}</span></h2>
               <Payment
-                WMI_PAYMENT_AMOUNT="40000"
+                :WMI_PAYMENT_AMOUNT="price(29000, 500)"
                 WMI_DESCRIPTION="iTeam"
                 WMI_SUCCESS_URL="https://iteam.ru/promo/processes"
                 WMI_FAIL_URL="https://iteam.ru/promo/processes"
@@ -671,15 +672,16 @@
               <span class="lead"><strong>+</strong></span>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">10 рабочих сессий с Александром Кочневым по Skype.</li>
-              <li class="list-group-item">Рецензирование документов.</li>
-              <li class="list-group-item">Ответы на вопросы по e-mail и телефону. Онлайн-консультации.</li>
+              <li class="list-group-item">10 рабочих сессий с Александром Кочневым по Skype</li>
+              <li class="list-group-item">Рецензирование документов</li>
+              <li class="list-group-item">Ответы на вопросы по e-mail и телефону</li>
+              <li class="list-group-item">Онлайн-консультации</li>
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">160&thinsp;000&nbsp;&#8381;</span></h2>
+              <h2><span class="badge badge-primary">{{ price(119000, 2000) }}</span></h2>
               <Payment
-                WMI_PAYMENT_AMOUNT="160000"
+                :WMI_PAYMENT_AMOUNT="price(119000, 2000)"
                 WMI_DESCRIPTION="iTeam"
                 WMI_SUCCESS_URL="https://iteam.ru/promo/processes"
                 WMI_FAIL_URL="https://iteam.ru/promo/processes"
@@ -698,15 +700,16 @@
               <span class="lead"><strong>+</strong></span>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">3 очных стратегических сессий и 7 рабочих сессий с Александром Кочневым по Skype.</li>
-              <li class="list-group-item">Рецензирование документов.</li>
-              <li class="list-group-item">Ответы на вопросы по e-mail и телефону. Онлайн-консультации.</li>
+              <li class="list-group-item">3 очных стратегических сессий и 7 рабочих сессий с Александром Кочневым по Skype</li>
+              <li class="list-group-item">Рецензирование документов</li>
+              <li class="list-group-item">Ответы на вопросы по e-mail и телефону</li>
+              <li class="list-group-item">Онлайн-консультации</li>
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">800&thinsp;000&nbsp;&#8381;</span></h2>
+              <h2><span class="badge badge-primary">799000</span></h2>
               <Payment
-                WMI_PAYMENT_AMOUNT="800000"
+                WMI_PAYMENT_AMOUNT="799000"
                 WMI_DESCRIPTION="iTeam"
                 WMI_SUCCESS_URL="https://iteam.ru/promo/processes"
                 WMI_FAIL_URL="https://iteam.ru/promo/processes"
