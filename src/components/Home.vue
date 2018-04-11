@@ -607,10 +607,9 @@
       <div class="row text-center" ref="join-block">
         <div class="col" style="margin-top:30px">
           <h2>Я участвую!</h2>
-          <p class="lead bg-success text-white p-2 font-weight-bold">Льготные цены в случае оплаты до 30 апреля.</p>
         </div>
       </div>
-      <div class="row last-row text-center">
+      <div class="row text-center">
         
         <div class="col-xl-3 col-md-6 mt-2">
           <div class="card h-100">
@@ -720,6 +719,12 @@
           </div>
         </div>
         
+      </div>
+
+      <div class="row text-center">
+        <div class="col" style="margin-top:30px">
+          <p class="lead bg-success text-white p-2 font-weight-bold">До&nbsp;30&nbsp;апреля льготные цены. После 1&nbsp;мая повышение цен каждый день!</p>
+        </div>
       </div>
 
       <div class="row last-row" style="margin-top:80px; font-family: 'Playfair Display', serif;">
