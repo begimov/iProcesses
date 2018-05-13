@@ -27,7 +27,8 @@ export default {
                 name: '',
                 email: '',
                 orderid: '',
-                campaign_token: this.campaign_token
+                campaign_token: this.campaign_token,
+                phone: ''
             },
             error: '',
             isLoading: false
