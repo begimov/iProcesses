@@ -625,16 +625,16 @@
                               </thead> 
                               <tbody> 
                                   <tr> 
-                                      <td class="text-center">21.05</td>
-                                      <td class="text-center">4.06</td>
-                                      <td class="text-center">18.06</td>
-                                      <td class="text-center">2.07</td>
-                                      <td class="text-center">16.07</td>
-                                      <td class="text-center">30.07</td>
-                                      <td class="text-center">13.08</td>
-                                      <td class="text-center">27.08</td>
-                                      <td class="text-center">10.09</td>
-                                      <td class="text-center">24.09</td>
+                                      <td class="text-center">19.07</td>
+                                      <td class="text-center">2.08</td>
+                                      <td class="text-center">16.08</td>
+                                      <td class="text-center">30.08</td>
+                                      <td class="text-center">13.09</td>
+                                      <td class="text-center">27.09</td>
+                                      <td class="text-center">11.10</td>
+                                      <td class="text-center">25.10</td>
+                                      <td class="text-center">8.11</td>
+                                      <td class="text-center">22.11</td>
                                   </tr>
                               </tbody> 
                           </table>
@@ -667,9 +667,11 @@
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">{{ price(39000, 500) }}</span></h2>
+              <h2><span class="badge badge-primary">39&thinsp;000</span></h2>
+              <a href="https://iteam.ru/learn/course/sozdanie-sistemy-upravlenija-protsessami-paket-bazovyj" class="w-100 btn btn-dark btn-lg mb-2">ПОЛУЧИТЬ СЧЕТ</a>
+              <p class="mt-2"><span class="badge badge-secondary">ИЛИ</span></p>
               <Payment
-                :WMI_PAYMENT_AMOUNT="price(39000, 500)"
+                :WMI_PAYMENT_AMOUNT="39000"
                 WMI_DESCRIPTION="iTeam"
                 WMI_SUCCESS_URL="https://iteam.ru/promo/processes"
                 WMI_FAIL_URL="https://iteam.ru/promo/processes"
@@ -695,9 +697,11 @@
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">{{ price(159000, 2000) }}</span></h2>
+              <h2><span class="badge badge-primary">159&thinsp;000</span></h2>
+              <a href="https://iteam.ru/learn/course/sozdanie-sistemy-upravlenija-protsessami-paket--super" class="w-100 btn btn-dark btn-lg mb-2">ПОЛУЧИТЬ СЧЕТ</a>
+              <p class="mt-2"><span class="badge badge-secondary">ИЛИ</span></p>
               <Payment
-                :WMI_PAYMENT_AMOUNT="price(159000, 2000)"
+                :WMI_PAYMENT_AMOUNT="159000"
                 WMI_DESCRIPTION="iTeam"
                 WMI_SUCCESS_URL="https://iteam.ru/promo/processes"
                 WMI_FAIL_URL="https://iteam.ru/promo/processes"
@@ -723,7 +727,9 @@
             </ul>
             <div class="card-body"></div>
             <div class="card-footer bg-white border-top-0 pb-3">
-              <h2><span class="badge badge-primary">799000</span></h2>
+              <h2><span class="badge badge-primary">799&thinsp;000</span></h2>
+              <a href="https://iteam.ru/learn/course/sozdanie-sistemy-upravlenija-protsessami-paket-premium" class="w-100 btn btn-dark btn-lg mb-2">ПОЛУЧИТЬ СЧЕТ</a>
+              <p class="mt-2"><span class="badge badge-secondary">ИЛИ</span></p>
               <Payment
                 WMI_PAYMENT_AMOUNT="799000"
                 WMI_DESCRIPTION="iTeam"
@@ -738,9 +744,16 @@
         
       </div>
 
-      <div class="row text-center">
+      <div class="row">
         <div class="col" style="margin-top:30px">
-          <p class="lead bg-success text-white p-2 font-weight-bold">До&nbsp;30&nbsp;апреля льготные цены. После 1&nbsp;мая повышение цен каждый день!</p>
+          <div class="lead bg-success text-white p-3">
+            <h3>Специальное предложение для участников Онлайн Марафона!</h3>
+            <ul class="mb-0">
+              <li>Для пакета «Базовый» 2 онлайн консультации с Александром Кочневым!</li>
+              <li>Для пакета «Супер» <a target="_blank" style="color:#fff;text-decoration:underline;" href="https://iteam.ru/learn/webinar/baza-znanij-russkij-menedzhment">Корпоративная база знаний Русский Менеджмент в подарок!</a></li>
+              <li>Для Пакета «Премиум» годовое консультационное сопровождение (12 онлайн консультаций) по построению системы управления Русский менеджмент!</li>
+            </ul>
+          </div>
         </div>
       </div>
 
