@@ -11,7 +11,7 @@
         <p class="lead header-date">14 мастер-классов + 50 шаблонов + консультации!</p>
         <!-- <p class="lead"><strong class="text-warning">По&nbsp;просьбам участников перенесено на&nbsp;неделю.</strong></p> -->
         <!-- <p class="lead mb-2"><span class="badge badge-light">Мастер-проект стартовал!</span></p> -->
-        <p class="lead mb-2"><span class="badge badge-success">Мастер-проект стартовал!</span></p>
+        <p class="lead mb-2"><span class="badge badge-success">16 октября</span></p>
         <p class="lead font-weight-bold">Вы можете присоединиться к 30+ командам-участникам!</p>
         <a href="#" class="btn btn-danger btn-lg text-uppercase" @click.prevent="scrollMeTo('join-block')">Участвовать</a>
       </div>
@@ -614,7 +614,7 @@
             </div>
           </div>
         </div>
-        <div class="row text-center last-row">
+        <!-- <div class="row text-center last-row">
           <div class="col-md-12">
               <div class="card">
                   <div class="card-header"><strong>График этапов</strong></div>
@@ -654,7 +654,7 @@
                   </div>
               </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
