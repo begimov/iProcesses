@@ -732,7 +732,7 @@
               <span class="lead"><strong>+</strong></span>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">3 очных стратегических сессий и 7 рабочих сессий с Александром Кочневым по Skype</li>
+              <li class="list-group-item">2 очных стратегических сессий и 8 рабочих сессий с Александром Кочневым по Skype</li>
               <li class="list-group-item">Рецензирование документов</li>
               <li class="list-group-item">Ответы на вопросы по e-mail и телефону</li>
               <li class="list-group-item">Онлайн-консультации</li>
